@@ -11,10 +11,14 @@ namespace Scribble {
 		}
 
 		void setup_ui () {
-			this.destroy.connect (Gtk.main_quit);
-
 			set_default_size (600, 400);
-			add (new ContentView ());
+
+            var headerbar = new Gtk.HeaderBar ();
+            headerbar.set_title ("Scribble");
+            headerbar.show_close_button = true;
+            set_titlebar (headerbar);
+
+            add (new ContentView ());
 		}
 
 		void connect_signals () { }

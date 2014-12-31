@@ -64,7 +64,13 @@ namespace Scribble {
 
 		private void load_list () {
 			for (int i=0; i < 10; i++) {
-				add_note ("woah" + i.to_string ());
+                if (i%3 == 0)
+                    add_note ("Important Note " + i.to_string ());
+                else if (i%5 == 0)
+                    add_note ("Class Note " + i.to_string ());
+                else
+                    add_note ("Note " + i.to_string ());
+
 			}
 		}
 		private void add_note (string title) {

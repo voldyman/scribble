@@ -18,7 +18,9 @@ namespace Scribble {
 
         private static Gtk.CssProvider get_css_provider () {
             var cssp = new Gtk.CssProvider ();
-            var css_file = File.new_for_path (Constants.PKGDATADIR + "/noteview.css");
+            //var css_file = File.new_for_path (Constants.PKGDATADIR + "/noteview.css");
+
+            var css_file = File.new_for_path ("/home/voldyman/code/scribble/data/noteview.css");
 
             try {
                 cssp.load_from_file (css_file);
