@@ -2,6 +2,10 @@
 
 Scribble is a note making application.
 
+##Screenshot
+
+![Screenshot of scribble](https://raw.githubusercontent.com/voldyman/scribble/master/screenshots/screenshot-2014-12-31.png)
+
 
 ##License
 
