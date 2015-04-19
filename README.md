@@ -13,7 +13,7 @@ Clone the git repo and cd into scribble, then run the following commands.
 
 ```
 $ mkdir build
-$ cmake .. && make
+$ cmake . && make
 $ ./scribble
 ```
 
